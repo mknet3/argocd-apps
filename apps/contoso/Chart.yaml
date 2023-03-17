@@ -1,0 +1,6 @@
+apiVersion: v2
+name: contoso
+description: A simple chart for testing purpose
+type: application
+version: 0.1.0
+appVersion: "1.16.0"

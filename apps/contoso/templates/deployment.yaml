@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: contoso
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: contoso
+  template:
+    metadata:
+      labels:
+        app: contoso
+    spec:
+      containers:
+      - name: contoso
+        image: nginx
+        ports:
+        - containerPort: 80
